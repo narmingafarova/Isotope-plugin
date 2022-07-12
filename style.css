@@ -61,20 +61,14 @@ h1 {
 
 .social-icon {
   padding: 0 25px 0 0;
-  /* padding: 0; */
 }
 
-.social-icon:hover {
-  animation: rotation 1s normal linear;
+.social-icon .fab {
+  transition: 0.6s ease-out;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+.social-icon .fab:hover {
+  transform: rotateZ(-360deg);
 }
 
 /* Sortable part  */
