@@ -1,0 +1,159 @@
+p,
+h1 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.bg-img {
+  background-image: url("http://themes.aftermotion.com/jobo/wp-content/uploads/2019/04/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.initial-page {
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(121, 9, 200, 0.79) 0%,
+    rgba(12, 147, 242, 0.9) 100%
+  );
+  padding: 320px 0 300px;
+}
+
+.first-page-texts h1 {
+  font-size: 80px;
+  font-weight: 600;
+  margin: 20px 0 40px;
+  line-height: 1.2em;
+}
+
+.title h2,
+.paragraph-for-title p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.first-page-texts p,
+.first-page-texts h1,
+.first-page-texts h2,
+.first-page-texts span {
+  color: white;
+}
+
+.paragraph-for-title h2 {
+  width: 550px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-icon li {
+  list-style: none;
+}
+
+.social-icon {
+  padding: 0 25px 0 0;
+  /* padding: 0; */
+}
+
+.social-icon:hover {
+  animation: rotation 1s normal linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Sortable part  */
+
+.sortable-part {
+  padding: 30px 0 30px;
+  text-align: center;
+}
+
+.sortable-part h3 {
+  color: #ffae00;
+  font-size: 12px;
+}
+
+.sortable-part h2 {
+  width: 300px;
+  margin: auto;
+  padding: 20px 0 70px;
+}
+
+.chooses-part {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.chooses-part .active {
+  color: #fc6a8d;
+}
+
+.choosing-title {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.choosing-title:hover {
+  color: #fc6a8d;
+}
+
+.choosing-title:not(:last-child) {
+  margin-right: 25px;
+}
+
+.sortable-pictures .all {
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+.sortable-pictures img {
+  height: 353.33px;
+  border-radius: 10px;
+}
+
+.sortable-pictures img:hover {
+  animation: shake 0.82s cubic-bezier(0.03, 0.98, 0.52, 0.99) both;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
